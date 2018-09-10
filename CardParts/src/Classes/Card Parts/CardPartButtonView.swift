@@ -43,7 +43,7 @@ extension Reactive where Base: CardPartButtonView {
 		}
 	}
 
-	public var contentHorizontalAlignment: Binder<UIControlContentHorizontalAlignment>{
+	public var contentHorizontalAlignment: Binder<UIControl.ContentHorizontalAlignment>{
 		return Binder(self.base) { (buttonView, contentHorizontalAlignment) -> () in
 			buttonView.contentHorizontalAlignment = contentHorizontalAlignment
 		}
